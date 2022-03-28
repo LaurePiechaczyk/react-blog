@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      <Routes BrowserRouter basename={process.env.PUBLIC_URL}>
         <Route path='/' element={<Home />}></Route>
         <Route path='/write' element={<AddArticle />}></Route>
         <Route path='/articles/:slug' element={<Article />}></Route>
