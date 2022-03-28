@@ -31,7 +31,7 @@ export default function Home() {
             <Card key={uuidv4()}>
               <h2>{item.title}</h2>
               <Link
-              to={`/articles/${item.title.replace(/\s+/g, '-').trim()}`}
+              to={`/react-blog/articles/${item.title.replace(/\s+/g, '-').trim()}`}
               state={
                 {
                   title: item.title,

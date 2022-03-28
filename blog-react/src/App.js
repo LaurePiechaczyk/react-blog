@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/write' element={<AddArticle />}></Route>
-        <Route path='/articles/:slug' element={<Article />}></Route>
+      <Routes basename={process.env.PUBLIC_URL}>
+        <Route path='/react-blog/' element={<Home />}></Route>
+        <Route path='/react-blog/write' element={<AddArticle />}></Route>
+        <Route path='/react-blog/articles/:slug' element={<Article />}></Route>
       </Routes>
     </>
   );
