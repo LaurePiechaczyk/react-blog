@@ -29,10 +29,10 @@ export default function Navbar() {
       {(toggleMenu || width > 500) && (
         <ul className="liste">
           <li className="items">
-            <Link to="/">Home</Link>
+            <Link to="/react-blog/">Home</Link>
           </li>
           <li className="items">
-            <Link to="/write">Write</Link>
+            <Link to="/react-blog/write">Write</Link>
           </li>
         </ul>
       )}
