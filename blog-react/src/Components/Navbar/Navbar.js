@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import { Link, link } from "react-router-dom";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -27,9 +28,15 @@ export default function Navbar() {
     <nav>
       {(toggleMenu || width > 500) && (
         <ul className="liste">
-          <li className="items">Home</li>
-          <li className="items">Write</li>
-          <li className="items">Contact</li>
+          <li className="items">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="items">
+            <Link to="/write">Write</Link>
+          </li>
+          <li className="items">
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       )}
       <button onClick={toggleNav} className="btn">O</button>

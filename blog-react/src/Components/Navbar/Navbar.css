@@ -32,6 +32,10 @@ nav {
     font-size: 18px;
 }
 
+.items a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
 @media screen and (max-width: 500px){
 
     .liste {
