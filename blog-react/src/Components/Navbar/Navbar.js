@@ -34,9 +34,6 @@ export default function Navbar() {
           <li className="items">
             <Link to="/write">Write</Link>
           </li>
-          <li className="items">
-            <Link to="/contact">Contact</Link>
-          </li>
         </ul>
       )}
       <button onClick={toggleNav} className="btn">O</button>
